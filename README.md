@@ -13,10 +13,10 @@ Using multiple `input` tags and/or select dropdowns, write JavaScript code so th
 
 ### Below are some samples of the Search results.
 
-####Search by Date / City / State:
+#### Search by Date / City / State:
 ![Select by Date/City/State](selectDateCityState.jpg)
 
 
-####Search by Shape:
+#### Search by Shape:
 ![Select by Shape](selectShape.jpg)
 
