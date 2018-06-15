@@ -105,7 +105,6 @@ function handleSearchButtonClick() {
 function handleSubmitButtonClick(event) {
   // The default behavior of a button clicked inside of a form is to try and submit the form somewhere (which we don't want)
   event.preventDefault();
-  var newDataSetItem = data;
 
  var newUFO = {
     datetime: datetimeInput.value.trim(),
@@ -116,11 +115,9 @@ function handleSubmitButtonClick(event) {
     comments: commentsInput.value.trim()
   }
 
-  if (newUFO.datetime !=0){
-    var li = document.createElement("li");
-       li.innerText = newUFO.datetime;
-    newDataSetItem.appendChild(li);
+  if (newUFO.datetime !=0) {
+    filteredDataSet.push(newUFO);
   }
+  renderTable();
   handleResetButtonClick();
 }
-
